@@ -2,9 +2,10 @@ import pic from "../../Images/jallow.jpeg"
 import './App.css';
 
 function App() {
-  return (<div>
+  return (
+  <div className="layout">
     <div className="header">
-<h1>ADAM MOHAMMED</h1>
+<h1>Mohammed Adam</h1>
 </div>
 
 <div className="row">
