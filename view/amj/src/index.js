@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Components/App/App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Portfolio from "../src/Pages/Portfolio/index.js";
+import Contact from "../src/Pages/Contact/index.js";
+import Hobbies from "../src/Pages/Hobbies/index.js";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="portfolio" element={<Portfolio />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="hobbies" element={<Hobbies />} />
+    </Routes>
+    </BrowserRouter>,
   document.getElementById('root')
 );
 

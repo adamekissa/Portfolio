@@ -1,25 +1,25 @@
 import pic from "../../Images/jallow.jpeg"
 import './App.css';
+import { Link } from "react-router-dom";
+import Header from "../Header";
 
 function App() {
   return (
   <div className="layout">
-    <div className="header">
-<h1>Mohammed Adam</h1>
-</div>
+    <Header/>
 
 <div className="row">
 <div className="col-3 col-s-3 menu">
 <ul>
-<li> CV </li>
-<li> Portfolio </li>
-<li> Experience </li>
-<li> Contact Me </li>
+<li> Download CV </li>
+<Link style={{ textDecoration: 'none' }} to="/portfolio"><li> Portfolio </li></Link>
+<Link style={{ textDecoration: 'none' }} to="/hobbies"><li> Hobbies </li></Link>
+<Link style={{ textDecoration: 'none' }} to="/contact"><li> Contact Me </li></Link>
 </ul>
 </div>
 
 <div className="col-6 col-s-9">
-<h1>About Me</h1>
+<h1>A little About Me</h1>
 <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nam hendrerit nisi sed sollicitudin pellentesque. Nunc 
