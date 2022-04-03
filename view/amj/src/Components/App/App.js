@@ -2,6 +2,8 @@ import pic from "../../Images/jallow.jpeg"
 import './App.css';
 import { Link } from "react-router-dom";
 import Header from "../Header";
+import Pulse from 'react-reveal/Pulse';
+import Wobble from 'react-reveal/Wobble';
 
 function App() {
   return (
@@ -19,8 +21,16 @@ function App() {
 </div>
 
 <div className="col-6 col-s-9">
-<h1>A little About Me</h1>
-<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+<Pulse> <h1> A little About Me </h1> </Pulse>
+<p>
+    My name is Mohammed Adam and I am a tech enthusiast.
+I have always been fascinated and excited about the field of software lifecycle I and would appreciate the opportunity to bring my 
+experience and creativity to your growing team. I have excellent communication and servant 
+leadership skills. I have a strong understanding of technical processes within software development
+and lifecycle. I stay up-to-speed with innovative technologies and test the promising ones to make 
+sure I do not miss game-changing opportunities to boost productivity and stay relevant.
+
+  </p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nam hendrerit nisi sed sollicitudin pellentesque. Nunc 
             posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique 
@@ -52,18 +62,6 @@ function App() {
             mattis at dui ac, convallis semper risus. In adipiscing ultrices 
             tellus, in suscipit massa vehicula eu.”
 </p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nam hendrerit nisi sed sollicitudin pellentesque. Nunc 
-            posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique 
-            nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec 
-            a dui et dui fringilla consectetur id nec massa. Aliquam erat 
-            volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. 
-            Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, 
-            mattis at dui ac, convallis semper risus. In adipiscing ultrices 
-            tellus, in suscipit massa vehicula eu.”
-</p>    
-
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nam hendrerit nisi sed sollicitudin pellentesque. Nunc 
             posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique 
@@ -74,17 +72,14 @@ function App() {
             mattis at dui ac, convallis semper risus. In adipiscing ultrices 
             tellus, in suscipit massa vehicula eu.”
 </p>
+
 </div>
 
 <div className="col-3 col-s-12">
 <div className="aside">
 <h2>What?</h2>
 <p>Chania is a city on the island of Crete.</p>
-<h2>Where?</h2>
-<p>Crete is a Greek island in the Mediterranean Sea.</p>
-<h2>How?</h2>
-<p>You can reach Chania airport from all over Europe.</p>
-<img id="img" src={pic} alt="amjp" />
+<Wobble> <img id="img" src={pic} alt="amjp" /> </Wobble> 
 </div>
 </div>
 </div>
