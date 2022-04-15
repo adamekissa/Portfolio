@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "../Header";
 import Pulse from 'react-reveal/Pulse';
 import Wobble from 'react-reveal/Wobble';
+import MyPdf from "../../Files/amj.pdf";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
 <div className="row">
 <div className="col-3 col-s-3 menu">
 <ul>
-<li> Download CV </li>
+<a style={{ textDecoration: 'none' }} href={MyPdf} download="amj.pdf"> <li> Download CV </li></a>
 <Link style={{ textDecoration: 'none' }} to="/portfolio"><li> Portfolio </li></Link>
 <Link style={{ textDecoration: 'none' }} to="/hobbies"><li> Hobbies </li></Link>
 <Link style={{ textDecoration: 'none' }} to="/contact"><li> Contact Me </li></Link>
@@ -21,7 +22,7 @@ function App() {
 </div>
 
 <div className="col-6 col-s-9">
-<Pulse> <h1> A little About Me </h1> </Pulse>
+<Pulse> <h1> HOME </h1> </Pulse>
 <p>
     My name is Mohammed Adam and I am a tech enthusiast.
 I have always been fascinated and excited about the field of software lifecycle I and would appreciate the opportunity to bring my 
@@ -77,8 +78,7 @@ sure I do not miss game-changing opportunities to boost productivity and stay re
 
 <div className="col-3 col-s-12">
 <div className="aside">
-<h2>What?</h2>
-<p>Chania is a city on the island of Crete.</p>
+<h2>JALLOW</h2>
 <Wobble> <img id="img" src={pic} alt="amjp" /> </Wobble> 
 </div>
 </div>
