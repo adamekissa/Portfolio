@@ -1,21 +1,21 @@
 import React from 'react';
-import useDarkMode from 'use-dark-mode';
-import Toggle from './Toggle';
+// import useDarkMode from 'use-dark-mode';
+// import Toggle from './Toggle';
 import "./Album.css";
 
 function Album() {
-  const darkMode = useDarkMode(false);
+//   const darkMode = useDarkMode(false);
 
   return (
     <div>
         <h1>Heyyyyyyy EEEEEEEEEEEEEEEEEEFLGJKBN KNJSCIOLKS</h1>
-        <button type="button" onClick={darkMode.disable}>
+        {/* <button type="button" onClick={darkMode.disable}>
         ☀
-      </button>
+      </button> */}
       {/* <Toggle checked={darkMode.value} onChange={darkMode.toggle} /> */}
-      <button type="button" onClick={darkMode.enable}>
+      {/* <button type="button" onClick={darkMode.enable}>
         ☾
-      </button>
+      </button> */}
       
     </div>
   );

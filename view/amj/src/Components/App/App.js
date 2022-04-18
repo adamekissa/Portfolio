@@ -8,7 +8,7 @@ import MyPdf from "../../Files/amj.pdf";
 
 function App() {
   return (
-  <div className="layout">
+  <div >
     <Header/>
 
 <div className="row">

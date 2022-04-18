@@ -9,7 +9,7 @@ import MyPdf from "../../Files/amj.pdf";
 function Contact() {
 
     return(
-<div className="layout"> 
+<div > 
         <Header/>
         <div className="row">
 <div className="col-3 col-s-3 menu">

@@ -31,7 +31,7 @@ function Hobbies(){
 // }
 
     return(
-<div className="layout">
+<div>
         <Header/>
 <div className="row">
 <div className="col-3 col-s-3 menu">
